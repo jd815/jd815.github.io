@@ -77,8 +77,10 @@
 
 
 .map .map-content .contact-info a {
-    text-decoration: none; /* Remove underline from links */
     color: inherit; /* Inherit the color from its parent element */
+}
+.map .map-content .contact-info p {
+    font-size: 20px;
 }
 .map-content {
     display: flex;
