@@ -53,6 +53,16 @@
 
 }
 
+.menu-pic img {
+    width: 800px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+@media screen and (max-width: 800px) {
+.menu-pic img {
+    width: calc(100vw - 20px); /* Width of screen minus 20px */
+    max-width: 100%; /* Ensure image doesn't exceed screen width */
+}
+}
 .map {
     padding-top: 20px; /* Add padding from the top */
     padding-left: 80px; /* Add padding from the left */
@@ -179,5 +189,38 @@ p{
   .col {
     padding-right: 10px; /* Adjust the space between images within a row */
     padding-bottom: 0px; /* Adjust the space below each image */
+  }
+  
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .section {
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-container img {
+    max-width: 200px;
+    margin: 0 10px;
   }
   
