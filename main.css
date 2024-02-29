@@ -7,6 +7,13 @@
     width: auto;
 
 }
+@media screen and (max-width: 660px) {
+    .head img {
+        width: calc(100vw - 20px); /* Width of screen minus 20px */
+        max-width: 100%; /* Ensure image doesn't exceed screen width */
+        height: auto;
+    }
+    }
 .head h1 a, h3 a {
     color: inherit; /* Inherit the color from its parent element */
     text-decoration: none; /* Remove underline */
