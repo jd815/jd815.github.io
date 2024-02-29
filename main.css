@@ -2,7 +2,7 @@
     text-align: center;
     padding: 40px;
 }
-.head h1 a {
+.head h1 a, h3 a {
     color: inherit; /* Inherit the color from its parent element */
     text-decoration: none; /* Remove underline */
 }
@@ -47,6 +47,34 @@
     padding: 20 80px;
 
 }
+
+.map {
+    padding-top: 20px; /* Add padding from the top */
+    padding-left: 80px; /* Add padding from the left */
+}
+
+.map .map-content .contact-info p {
+    margin: 0; /* Remove default margin */
+    color: inherit; /* Inherit the color from its parent element */
+}
+
+.map .map-content .contact-info a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit the color from its parent element */
+}
+.map-content {
+    display: flex;
+}
+
+.map-content iframe {
+    margin-right: 40px; /* Add margin between map and contact info */
+}
+
+.contact-info {
+    font-family: Bison, sans-serif;
+    font-size: 24px;
+}
+
 
 /* Footer styles */
 footer {
