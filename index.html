@@ -8,6 +8,11 @@
     <link href="main.css" rel="stylesheet" type="text/css">
 </head>
   <body>
+    <div id="languageSwitch">
+        <img src="pictures/cz.png" alt="Czech" onclick="setLang('cz')">
+        <span>|</span>
+        <img src="pictures/us.png" alt="US" onclick="setLang('en')">
+    </div>
     <div class="head">
         <a href="index.html"><img src="pictures/name_logo.jpeg" alt="logo"></a>
     </div>
@@ -47,16 +52,20 @@
     <div class = "logo">
         <img src="pictures/test_logo.jpeg" alt="Logo">
     </div>
-
-    <div class="burger-text">
-        <h2>EXPLORING BURGER CULTURE SINCE <br> 2011 </h2>
+    <div id='text'>
+        <div class="burger-text">
+            <h2 lang='en'>EXPLORING BURGER CULTURE SINCE <br> 2020 </h2>
+            <h2 lang='cz'>PROZKOUMÁVÁNÍ KULTURY HAMBURGERŮ OD <br> 2020</h2>
+        </div>
+        <div class="history-block">
+            <p lang='en'>
+                We explore the culture of hamburgers around the world to interpret legendary recipes with rare ingredients, crafted by fire artisans. The Burger team excels in the art of cooking burgers with a technique called Succus energy. Today we have one restaurant in Prague with the best burgers. We'll see you soon at Burger Ateliér!
+            </p>
+            <p lang='cz'>
+                Prozkoumáváme kulturu hamburgerů po celém světě, abychom interpretovali legendární recepty s vzácnými ingrediencemi, vytvořené ohnivými umělci. Tým Burgeru exceluje v umění vaření burgerů pomocí techniky nazývané energie Succus. Dnes máme jeden restauraci v Praze s nejlepšími hamburgery. Brzy vás uvidíme v Burger Ateliér!
+            </p>
+        </div>
     </div>
-    <div class="history-block">
-        <p>
-            Lendit explorat culturam hamburgerium per orbem terrarum ut legendarias formulas cum ingredientibus raris interpretet, a sodalibus artificibus igne factis. Egregium est teamum Burgernitatem vel artem coquendi hamburgesa Blend cum energia nuncupata Succus. Hodie, Blendus habet quinque tabernas in Paride et unam tabernam in Aquae Sextiae. Nos videbimus nos brevi in proximo Blend!
-        </p>
-    </div>
-
     <footer>
         <div class="footer-container">
           <div class="social-icons">
@@ -67,6 +76,6 @@
         </div>
       </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+        <script src="lang.js"></script>
   </body>
 </html>

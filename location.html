@@ -8,6 +8,11 @@
     <link href="main.css" rel="stylesheet" type="text/css">
 </head>
   <body>
+    <div id="languageSwitch">
+        <img src="pictures/cz.png" alt="Czech" onclick="setLang('cz')">
+        <span>|</span>
+        <img src="pictures/us.png" alt="US" onclick="setLang('en')">
+    </div>
     <div class="head">
         <a href="index.html"><img src="pictures/name_logo.jpeg" alt="logo"></a>
     </div>
@@ -44,7 +49,10 @@
         </nav>
     </div>
     <div class="map">
-        <h3>Our Location</h3>
+        <div id="text">
+            <h3 lang='en'>Our Location</h3>
+            <h3 lang='cz'>Naše Lokace</h3>
+        </div>
         <div class="map-content">
             <!-- Embed Google Map using iframe -->
             <iframe
@@ -57,7 +65,7 @@
             ></iframe>
             <div class="contact-info">
                 <p>Email: <a href="mailto:burgeratelier878@gmail.com">burgeratelier878@gmail.com</a></p>
-                <p>Phone number: <a href="tel:+1234567890">+1234567890</a></p>
+                <p>Phone number: <a href="tel:+1234567890">+420 777 484 878</a></p>
                 <p><a href="https://wolt.com/cs/cze/prague/restaurant/burger-atelier">Wolt</a></p>
                 <p><a href="https://www.foodora.cz/restaurant/hebu/burger-atelier">Foodora</a></p>
                 <div class="logo-pic">
@@ -78,5 +86,6 @@
         </div>
       </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+      <script src="lang.js"></script>
+    </body>
 </html>
